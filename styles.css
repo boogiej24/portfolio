@@ -266,3 +266,11 @@ textarea{resize:vertical}
   box-shadow: 0 20px 60px rgba(0,0,0,.6);
   background: #000;
 }
+.expandable:hover {
+  filter: brightness(0.95);
+}
+.project {
+  box-shadow: 0 14px 40px rgba(0,0,0,.55);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+

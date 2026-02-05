@@ -47,9 +47,9 @@
       <div class="container hero-inner">
         <div>
           <p class="kicker">GIS Portfolio</p>
-          <h1>Turning spatial data into clear, intepretable visualizations.</h1>
+          <h1>Turning spatial data into clear, interpretable visualizations.</h1>
           <p class="lead">
-            I’m an aspiring geospatial professional with experience in geospatial analysis, GIS programming, scripting & automation thematic mapping, and
+            I’m an aspiring geospatial professional with experience in geospatial analysis, GIS programming, scripting & automation, thematic mapping, and
             spatial data visualization using ArcGIS, QGIS, and Python, and R.
           </p>
           <div class="hero-actions">
@@ -69,12 +69,53 @@
     <div class="section-head">
       <h2>Projects</h2>
       <p class="small">
-        Selected GIS and cartography projects demonstrating projection analysis,
-        thematic mapping, and data visualization.
+        Selected GIS and cartography projects, professional and academic.
       </p>
     </div>
 
     <div class="grid">
+      <article class="card project">
+  <img
+    class="expandable"
+    src="images/WW.png"
+    alt="Primary Library Location of Active Users map (Wildwood Branch)"
+    style="width:100%; height:auto; object-fit:contain;"
+  />
+  <div class="card-body">
+    <h3>Primary Library Location of Active Users</h3>
+    <p class="small">
+      Map showing active library users by primary branch location across Washington County
+      from 4/21/24 to 6/30/25.
+    </p>
+    <ul class="tags">
+      <li>GIS</li>
+      <li>Cartography</li>
+      <li>Library Analysis</li>
+    </ul>
+  </div>
+</article>
+
+<article class="card project">
+  <img
+    class="expandable"
+    src="images/WW_WalkTime.png"
+    alt="Wildwood Library walkability service area map"
+    style="width:100%; height:auto; object-fit:contain;"
+  />
+  <div class="card-body">
+    <h3>Wildwood Library Walkability Analysis</h3>
+    <p class="small">
+      Walk-time service area analysis showing estimated population coverage within
+      5, 10, and 15 minutes walking distance.
+    </p>
+    <ul class="tags">
+      <li>Network Analysis</li>
+      <li>Service Areas</li>
+      <li>Accessibility</li>
+    </ul>
+  </div>
+</article>
+
       <article class="card project">
         <img
           class="expandable"
@@ -168,11 +209,11 @@
         <h2>Work Experience</h2>
         <div class="card">
           <h3>GIS Intern</h3>
-          <p class="small">Organization: Washington County Minnesota • Oakpark Heights, MN • 6/25-12/25</p>
+          <p class="small">Organization: Washington County Minnesota • Oakpark Heights, MN • June 2025 - December 2025</p>
           <ul>
             <li>Worked independently as sole analyst on mapping projects for county library, elections commission, Metro Food Resources, and more.</li>
-            <li>Scripting and automation using Python for projects and analysis that were conducted mutliple times.</li>
-            <li>Collaborated with other analysts and communicated GIS concepts to non GIS professionals on parks and trails mapping.</li>
+            <li>Scripting and automation using Python for projects and analysis that were conducted multiple times.</li>
+            <li>Collaborated with other analysts and communicated GIS concepts to non-GIS professionals on parks and trails mapping.</li>
             <li>Enterprise geodatabase management, geocoding, addressing, and digitizing.</li>
           </ul>
         </div>
@@ -184,7 +225,7 @@
         <h2>Education</h2>
         <div class="card">
           <h3>University of Wisconsin–Eau Claire</h3>
-          <p class="small">Geospatial Analysis & Technology • Coursework in GIS analysis, R, Python, HTML, Remote Sensing, Web Design, Scripting and Automation</p>
+          <p class="small">Geospatial Analysis & Technology B.S • Coursework in GIS analysis, R, Python, HTML, Remote Sensing, Web Design, Scripting and Automation</p>
         </div>
       </div>
     </section>
@@ -229,7 +270,6 @@
         <h2>Contact</h2>
         <ul class="contact-list">
           <li><strong>Email:</strong> <a href="mailto:hessewithbroeja@outlook.com">hessewithbroeja@outlook.com</a></li>
-          <li><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/yourname</a></li>
         </ul>
       </div>
     </section>
@@ -238,7 +278,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <strong>© 2025 Jack Hesse-Withbroe</strong>
+        <strong>© 2026 Jack Hesse-Withbroe</strong>
         <div class="small">GIS Portfolio</div>
       </div>
     </div>
@@ -283,6 +323,12 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeModal();
   });
+  document.querySelectorAll(".nav-list a").forEach(link => {
+  link.addEventListener("click", () => {
+    list.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+  });
+});
 </script>
 </body>
 </html>
